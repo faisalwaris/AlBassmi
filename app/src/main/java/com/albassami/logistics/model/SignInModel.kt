@@ -1,4 +1,4 @@
-package com.taxi.albassmi.model
+package com.albassami.logistics.model
 
 data class SignInModel(
     var email: String?,

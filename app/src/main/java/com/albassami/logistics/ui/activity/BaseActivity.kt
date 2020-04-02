@@ -1,4 +1,4 @@
-package com.taxi.albassmi.ui.activity
+package com.albassami.logistics.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 

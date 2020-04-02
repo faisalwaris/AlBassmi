@@ -1,4 +1,4 @@
-package com.taxi.albassmi
+package com.albassami.logistics
 
 import org.junit.Test
 

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.taxi.albassmi.ui.fragment.SplashFragment"
+        android:name="com.albassami.logistics.ui.fragment.SplashFragment"
         android:label="SplashFragment">
         <action
             android:id="@+id/action_splashFragment_to_homeRegistrationFragment"
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.taxi.albassmi.ui.fragment.SignInFragment"
+        android:name="com.albassami.logistics.ui.fragment.SignInFragment"
         android:label="SignIn">
 
         <action
@@ -45,7 +45,7 @@
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.taxi.albassmi.ui.fragment.SignUpFragment"
+        android:name="com.albassami.logistics.ui.fragment.SignUpFragment"
         android:label="SignUp">
 
         <action
@@ -62,13 +62,13 @@
 
     <fragment
         android:id="@+id/forgotFragment"
-        android:name="com.taxi.albassmi.ui.fragment.ForgotPasswordFragment"
+        android:name="com.albassami.logistics.ui.fragment.ForgotPasswordFragment"
         android:label="ForgotFragment" />
 
 
     <fragment
         android:id="@+id/homeRegistrationFragment"
-        android:name="com.taxi.albassmi.ui.fragment.HomeRegistrationFragment"
+        android:name="com.albassami.logistics.ui.fragment.HomeRegistrationFragment"
         tools:layout="homeRegistrationFragment">
 
         <action

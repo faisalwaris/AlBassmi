@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="com.taxi.albassmi.viewModel.SignInViewModel" />
+            type="com.albassami.logistics.viewModel.SignInViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

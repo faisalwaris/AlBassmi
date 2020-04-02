@@ -1,7 +1,7 @@
-package com.taxi.albassmi.ui.activity
+package com.albassami.logistics.ui.activity
 
 import android.os.Bundle
-import com.taxi.albassmi.R
+import com.albassami.logistics.R
 
 class RootActivity : BaseActivity() {
 

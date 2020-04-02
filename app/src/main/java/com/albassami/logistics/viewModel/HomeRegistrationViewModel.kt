@@ -1,9 +1,10 @@
-package com.taxi.albassmi.viewModel
+
+package com.albassami.logistics.viewModel
 
 import android.view.View
 import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
-import com.taxi.albassmi.R
+import com.albassami.logistics.R
 
 class HomeRegistrationViewModel: ViewModel() {
 

@@ -1,4 +1,4 @@
-package com.taxi.albassmi.util
+package com.albassami.logistics.util
 
 class Constant {
     companion object {

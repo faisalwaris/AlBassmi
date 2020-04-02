@@ -1,4 +1,4 @@
-package com.taxi.albassmi.ui.fragment
+package com.albassami.logistics.ui.fragment
 
 import android.os.Bundle
 import android.view.View

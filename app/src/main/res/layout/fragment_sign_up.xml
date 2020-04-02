@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="com.taxi.albassmi.viewModel.SignUpViewModel" />
+            type="com.albassami.logistics.viewModel.SignUpViewModel" />
     </data>
 
     <ScrollView

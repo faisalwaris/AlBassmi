@@ -8,7 +8,7 @@ android {
     buildToolsVersion "29.0.2"
 
     defaultConfig {
-        applicationId "com.taxi.albassmi"
+        applicationId "com.albassmi.logistics"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1

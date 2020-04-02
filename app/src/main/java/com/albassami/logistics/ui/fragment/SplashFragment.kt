@@ -1,4 +1,4 @@
-package com.taxi.albassmi.ui.fragment
+package com.albassami.logistics.ui.fragment
 
 import android.os.Bundle
 import android.os.Handler
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import com.taxi.albassmi.R
-import com.taxi.albassmi.util.Constant
+import com.albassami.logistics.R
+import com.albassami.logistics.util.Constant
 
 class SplashFragment : BaseFragment() {
 

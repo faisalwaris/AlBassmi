@@ -1,4 +1,4 @@
-package com.taxi.albassmi.ui.fragment
+package com.albassami.logistics.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.core.text.HtmlCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import com.taxi.albassmi.R
-import com.taxi.albassmi.databinding.FragmentSignUpBinding
-import com.taxi.albassmi.viewModel.SignUpViewModel
+import com.albassami.logistics.R
+import com.albassami.logistics.databinding.FragmentSignUpBinding
+import com.albassami.logistics.viewModel.SignUpViewModel
 
 class SignUpFragment : BaseFragment() {
 
