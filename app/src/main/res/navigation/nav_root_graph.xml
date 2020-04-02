@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.taxi.albassmi.ui.fragment.SplashFragment"
+        android:label="SplashFragment">
+        <action
+            android:id="@+id/action_splashFragment_to_homeRegistrationFragment"
+            app:destination="@id/homeRegistrationFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.taxi.albassmi.ui.fragment.SignInFragment"
+        android:label="SignIn">
+
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"  />
+
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPassword"
+            app:destination="@id/forgotFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.taxi.albassmi.ui.fragment.SignUpFragment"
+        android:label="SignUp">
+
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/signUpFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="com.taxi.albassmi.ui.fragment.ForgotPasswordFragment"
+        android:label="ForgotFragment" />
+
+
+    <fragment
+        android:id="@+id/homeRegistrationFragment"
+        android:name="com.taxi.albassmi.ui.fragment.HomeRegistrationFragment"
+        tools:layout="homeRegistrationFragment">
+
+        <action
+            android:id="@+id/action_homeRegistrationFragment_to_signInFragment"
+            app:destination="@+id/signInFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"/>
+
+        <action
+            android:id="@+id/action_homeRegistrationFragment_to_signUpFragment"
+            app:destination="@+id/signUpFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"/>
+    </fragment>
+
+</navigation>
