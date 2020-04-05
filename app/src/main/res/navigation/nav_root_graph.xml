@@ -41,6 +41,14 @@
             app:popEnterAnim="@anim/sliding_in_left"
             app:popExitAnim="@anim/sliding_out_right" />
 
+        <action
+            android:id="@+id/action_signInFragment_to_nav_home_fragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right" />
+
     </fragment>
 
     <fragment
@@ -65,7 +73,6 @@
         android:name="com.albassami.logistics.ui.fragment.ForgotPasswordFragment"
         android:label="ForgotFragment" />
 
-
     <fragment
         android:id="@+id/homeRegistrationFragment"
         android:name="com.albassami.logistics.ui.fragment.HomeRegistrationFragment"
@@ -87,5 +94,10 @@
             app:popEnterAnim="@anim/sliding_in_left"
             app:popExitAnim="@anim/sliding_out_right"/>
     </fragment>
+
+    <fragment
+        android:name="com.albassami.logistics.ui.fragment.HomeFragment"
+        android:id="@+id/homeFragment"
+        android:label="homeFragment"/>
 
 </navigation>

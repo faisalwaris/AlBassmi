@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/doorLockFragment">
+
+    <fragment
+        android:name="com.albassami.logistics.ui.fragment.DoorLockFragment"
+        android:id="@+id/doorLockFragment"
+        android:label="DoorLockFragment">
+        <action
+            android:id="@+id/action_doorLockFragment_to_maintenanceFragment"
+            app:destination="@id/maintenanceFragment" />
+        <action
+            android:id="@+id/action_doorLockFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_doorLockFragment_to_gasFragment2"
+            app:destination="@id/gasFragment" />
+        <action
+            android:id="@+id/action_doorLockFragment_to_oilFragment"
+            app:destination="@id/oilFragment" />
+        <action
+            android:id="@+id/action_doorLockFragment_to_tireFragment"
+            app:destination="@id/tireFragment" />
+        <action
+            android:id="@+id/action_doorLockFragment_to_towingFragment"
+            app:destination="@id/towingFragment" />
+    </fragment>
+
+
+    <fragment
+        android:name="com.albassami.logistics.ui.fragment.MaintenanceFragment"
+        android:id="@+id/maintenanceFragment"
+        android:label="MaintenanceFragment">
+        <action
+            android:id="@+id/action_maintenanceFragment_to_doorLockFragment"
+            app:destination="@id/doorLockFragment" />
+        <action
+            android:id="@+id/action_maintenanceFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_maintenanceFragment_to_gasFragment"
+            app:destination="@id/gasFragment" />
+        <action
+            android:id="@+id/action_maintenanceFragment_to_oilFragment"
+            app:destination="@id/oilFragment" />
+        <action
+            android:id="@+id/action_maintenanceFragment_to_tireFragment"
+            app:destination="@id/tireFragment" />
+        <action
+            android:id="@+id/action_maintenanceFragment_to_tireFragment2"
+            app:destination="@id/tireFragment" />
+        <action
+            android:id="@+id/action_maintenanceFragment_to_towingFragment"
+            app:destination="@id/towingFragment" />
+    </fragment>
+
+
+    <fragment
+        android:name="com.albassami.logistics.ui.fragment.BatteryFragment"
+        android:id="@+id/batteryFragment"
+        android:label="BatteryFragment">
+        <action
+            android:id="@+id/action_batteryFragment_to_doorLockFragment"
+            app:destination="@id/doorLockFragment" />
+        <action
+            android:id="@+id/action_batteryFragment_to_maintenanceFragment"
+            app:destination="@id/maintenanceFragment" />
+        <action
+            android:id="@+id/action_batteryFragment_to_gasFragment"
+            app:destination="@id/gasFragment" />
+        <action
+            android:id="@+id/action_batteryFragment_to_oilFragment"
+            app:destination="@id/oilFragment" />
+        <action
+            android:id="@+id/action_batteryFragment_to_tireFragment"
+            app:destination="@id/tireFragment" />
+        <action
+            android:id="@+id/action_batteryFragment_to_towingFragment"
+            app:destination="@id/towingFragment" />
+    </fragment>
+
+    <fragment
+        android:name="com.albassami.logistics.ui.fragment.GasFragment"
+        android:id="@+id/gasFragment"
+        android:label="GasFragment">
+        <action
+            android:id="@+id/action_gasFragment_to_doorLockFragment"
+            app:destination="@id/doorLockFragment" />
+        <action
+            android:id="@+id/action_gasFragment_to_maintenanceFragment"
+            app:destination="@id/maintenanceFragment" />
+        <action
+            android:id="@+id/action_gasFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_gasFragment_to_oilFragment"
+            app:destination="@id/oilFragment" />
+        <action
+            android:id="@+id/action_gasFragment_to_tireFragment"
+            app:destination="@id/tireFragment" />
+        <action
+            android:id="@+id/action_gasFragment_to_towingFragment"
+            app:destination="@id/towingFragment" />
+    </fragment>
+
+    <fragment
+        android:name="com.albassami.logistics.ui.fragment.OilFragment"
+        android:id="@+id/oilFragment"
+        android:label="OilFragment">
+        <action
+            android:id="@+id/action_oilFragment_to_doorLockFragment"
+            app:destination="@id/doorLockFragment" />
+        <action
+            android:id="@+id/action_oilFragment_to_maintenanceFragment"
+            app:destination="@id/maintenanceFragment" />
+        <action
+            android:id="@+id/action_oilFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_oilFragment_to_gasFragment"
+            app:destination="@id/gasFragment" />
+        <action
+            android:id="@+id/action_oilFragment_to_tireFragment"
+            app:destination="@id/tireFragment" />
+        <action
+            android:id="@+id/action_oilFragment_to_towingFragment"
+            app:destination="@id/towingFragment" />
+    </fragment>
+
+    <fragment
+        android:name="com.albassami.logistics.ui.fragment.TireFragment"
+        android:id="@+id/tireFragment"
+        android:label="TireFragment"/>
+
+    <fragment
+        android:name="com.albassami.logistics.ui.fragment.TowingFragment"
+        android:id="@+id/towingFragment"
+        android:label="TowingFragment">
+        <action
+            android:id="@+id/action_towingFragment_to_doorLockFragment"
+            app:destination="@id/doorLockFragment" />
+        <action
+            android:id="@+id/action_towingFragment_to_maintenanceFragment"
+            app:destination="@id/maintenanceFragment" />
+        <action
+            android:id="@+id/action_towingFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_towingFragment_to_tireFragment"
+            app:destination="@id/tireFragment" />
+        <action
+            android:id="@+id/action_towingFragment_to_oilFragment"
+            app:destination="@id/oilFragment" />
+        <action
+            android:id="@+id/action_towingFragment_to_gasFragment"
+            app:destination="@id/gasFragment" />
+    </fragment>
+
+</navigation>

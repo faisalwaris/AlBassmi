@@ -12,6 +12,7 @@ class SignInViewModel: ViewModel() {
     var password: String? = null
 
     fun signIn(view: View){
+        view.findNavController().navigate(R.id.action_signInFragment_to_nav_home_fragment)
     }
 
     fun forgotPassword(view: View){
