@@ -1,45 +1,46 @@
-package com.albassami.logistics.ui.fragment
+package com.albassami.logistics.ui.activity
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.albassami.logistics.R
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.activity_home.*
 
-class HomeFragment: BaseFragment(), View.OnClickListener {
-
+class MainActivity: BaseActivity() {
     private var previousFragmentSelected: String? = null
+
     private var currentFragmentSelected: String? = null
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_home,container,false)
+    private lateinit var homeNavGraph: NavController
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_home)
     }
-    override fun initializeUiElements(view: View) {
+    override fun initializeUiElements() {
         currentFragmentSelected = getString(R.string.doorLockFragment)
         previousFragmentSelected = getString(R.string.doorLockFragment)
+        homeNavGraph = findNavController(R.id.home_fragment)
+
+        //need to manually set each view with navigation controller
+        Navigation.setViewNavController(container_door_look,homeNavGraph)
+        Navigation.setViewNavController(container_maintenance,homeNavGraph)
+        Navigation.setViewNavController(container_battery,homeNavGraph)
+        Navigation.setViewNavController(container_gas,homeNavGraph)
+        Navigation.setViewNavController(container_oil,homeNavGraph)
+        Navigation.setViewNavController(container_tire,homeNavGraph)
+        Navigation.setViewNavController(container_towing,homeNavGraph)
     }
 
-    override fun setUpListeners() {
-        container_door_look.setOnClickListener(this)
-        container_maintenance.setOnClickListener(this)
-        container_battery.setOnClickListener(this)
-        container_gas.setOnClickListener(this)
-        container_oil.setOnClickListener(this)
-        container_tire.setOnClickListener(this)
-        container_towing.setOnClickListener(this)
+    override fun setUpListener() {
     }
 
-
-    private fun bottomSheetSelected(view:View?){
+     fun bottomSheetSelected(view: View){
         //update text
         unSelectText(tv_towing)
         unSelectText(tv_tire)
@@ -105,36 +106,28 @@ class HomeFragment: BaseFragment(), View.OnClickListener {
             moveToTargetFragment(view,"action_${previousFragmentSelected}_to_${targetFragment}")
             previousFragmentSelected = targetFragment
         }
-
     }
 
+
     private fun unSelectText(textView: TextView){
-        textView.setTextColor(ContextCompat.getColor(context!!,android.R.color.black))
+        textView.setTextColor(ContextCompat.getColor(this,android.R.color.black))
     }
 
     private fun unSelectImage(img:ImageView){
-        img.setColorFilter(ContextCompat.getColor(context!!,android.R.color.black))
+        img.setColorFilter(ContextCompat.getColor(this,android.R.color.black))
     }
 
     private fun selectText(textView: TextView){
-        textView.setTextColor(ContextCompat.getColor(context!!,android.R.color.white))
+        textView.setTextColor(ContextCompat.getColor(this,android.R.color.white))
     }
 
     private fun selectImage(img:ImageView){
-        img.setColorFilter(ContextCompat.getColor(context!!,android.R.color.white))
+        img.setColorFilter(ContextCompat.getColor(this,android.R.color.white))
     }
 
     private fun moveToTargetFragment(view: View?, actionName: String){
-/*        var homeNavGraph = R.navigation.nav_home_graph.javaClass
-        var actionToMove = homeNavGraph.getDeclaredField(actionName)*/
-  /*      var action = resources.getIdentifier(actionName,"id","com.albassmi.logistics")
-
-        view?.findNavController()?.navigate(R.id.action_doorLockFragment_to_maintenanceFragment)*/
+        var action = resources.getIdentifier(actionName,"id",packageName)
+        view?.findNavController()?.navigate(action)
     }
-
-    override fun onClick(v: View?) {
-        bottomSheetSelected(v)
-    }
-
 
 }

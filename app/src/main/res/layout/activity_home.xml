@@ -42,9 +42,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_door_look"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/bottom_item_width"
                 android:layout_height="match_parent"
                 android:padding="5dp"
+                android:onClick="bottomSheetSelected"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/container_maintenance"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -76,10 +77,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_maintenance"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/bottom_item_width"
                 android:layout_height="0dp"
                 android:padding="5dp"
-           
+                android:onClick="bottomSheetSelected"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/container_battery"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -91,6 +92,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/maintenance"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
                     android:textColor="@android:color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -111,10 +114,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_battery"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/bottom_item_width"
                 android:layout_height="0dp"
                 android:padding="5dp"
-           
+                android:onClick="bottomSheetSelected"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/container_gas"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -146,10 +149,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_gas"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/bottom_item_width"
                 android:layout_height="0dp"
                 android:padding="5dp"
-           
+                android:onClick="bottomSheetSelected"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/container_oil"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -182,9 +185,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_oil"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/bottom_item_width"
                 android:layout_height="0dp"
                 android:padding="5dp"
+                android:onClick="bottomSheetSelected"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/container_tire"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -217,10 +221,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_tire"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/bottom_item_width"
                 android:layout_height="0dp"
                 android:padding="5dp"
-           
+                android:onClick="bottomSheetSelected"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/container_towing"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -253,10 +257,10 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_towing"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/bottom_item_width"
                 android:layout_height="0dp"
                 android:padding="5dp"
-           
+                android:onClick="bottomSheetSelected"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

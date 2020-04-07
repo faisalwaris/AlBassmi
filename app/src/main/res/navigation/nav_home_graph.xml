@@ -5,158 +5,440 @@
     android:id="@+id/nav_home_graph"
     app:startDestination="@id/doorLockFragment">
 
+    //door lock
     <fragment
         android:name="com.albassami.logistics.ui.fragment.DoorLockFragment"
         android:id="@+id/doorLockFragment"
         android:label="DoorLockFragment">
         <action
             android:id="@+id/action_doorLockFragment_to_maintenanceFragment"
-            app:destination="@id/maintenanceFragment" />
+            app:destination="@id/maintenanceFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/doorLockFragment"
+            app:popUpToInclusive="true"  />
         <action
             android:id="@+id/action_doorLockFragment_to_batteryFragment"
-            app:destination="@id/batteryFragment" />
+            app:destination="@id/batteryFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/doorLockFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_doorLockFragment_to_gasFragment2"
-            app:destination="@id/gasFragment" />
+            app:destination="@id/gasFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/doorLockFragment"
+            app:popUpToInclusive="true"  />
         <action
             android:id="@+id/action_doorLockFragment_to_oilFragment"
-            app:destination="@id/oilFragment" />
+            app:destination="@id/oilFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/doorLockFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_doorLockFragment_to_tireFragment"
-            app:destination="@id/tireFragment" />
+            app:destination="@id/tireFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/doorLockFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_doorLockFragment_to_towingFragment"
-            app:destination="@id/towingFragment" />
+            app:destination="@id/towingFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/doorLockFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
-
+    //maintenance
     <fragment
         android:name="com.albassami.logistics.ui.fragment.MaintenanceFragment"
         android:id="@+id/maintenanceFragment"
         android:label="MaintenanceFragment">
         <action
             android:id="@+id/action_maintenanceFragment_to_doorLockFragment"
-            app:destination="@id/doorLockFragment" />
+            app:destination="@id/doorLockFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/maintenanceFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_maintenanceFragment_to_batteryFragment"
-            app:destination="@id/batteryFragment" />
+            app:destination="@id/batteryFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/maintenanceFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_maintenanceFragment_to_gasFragment"
-            app:destination="@id/gasFragment" />
+            app:destination="@id/gasFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/maintenanceFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_maintenanceFragment_to_oilFragment"
-            app:destination="@id/oilFragment" />
+            app:destination="@id/oilFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/maintenanceFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_maintenanceFragment_to_tireFragment"
-            app:destination="@id/tireFragment" />
+            app:destination="@id/tireFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/maintenanceFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_maintenanceFragment_to_tireFragment2"
-            app:destination="@id/tireFragment" />
+            app:destination="@id/tireFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/maintenanceFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_maintenanceFragment_to_towingFragment"
-            app:destination="@id/towingFragment" />
+            app:destination="@id/towingFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/maintenanceFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
-
+    //battery
     <fragment
         android:name="com.albassami.logistics.ui.fragment.BatteryFragment"
         android:id="@+id/batteryFragment"
         android:label="BatteryFragment">
         <action
             android:id="@+id/action_batteryFragment_to_doorLockFragment"
-            app:destination="@id/doorLockFragment" />
+            app:destination="@id/doorLockFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/batteryFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_batteryFragment_to_maintenanceFragment"
-            app:destination="@id/maintenanceFragment" />
+            app:destination="@id/maintenanceFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/batteryFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_batteryFragment_to_gasFragment"
-            app:destination="@id/gasFragment" />
+            app:destination="@id/gasFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/batteryFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_batteryFragment_to_oilFragment"
-            app:destination="@id/oilFragment" />
+            app:destination="@id/oilFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/batteryFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_batteryFragment_to_tireFragment"
-            app:destination="@id/tireFragment" />
+            app:destination="@id/tireFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/batteryFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_batteryFragment_to_towingFragment"
-            app:destination="@id/towingFragment" />
+            app:destination="@id/towingFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/batteryFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
+    //gas
     <fragment
         android:name="com.albassami.logistics.ui.fragment.GasFragment"
         android:id="@+id/gasFragment"
         android:label="GasFragment">
         <action
             android:id="@+id/action_gasFragment_to_doorLockFragment"
-            app:destination="@id/doorLockFragment" />
+            app:destination="@id/doorLockFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/gasFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_gasFragment_to_maintenanceFragment"
-            app:destination="@id/maintenanceFragment" />
+            app:destination="@id/maintenanceFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/gasFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_gasFragment_to_batteryFragment"
-            app:destination="@id/batteryFragment" />
+            app:destination="@id/batteryFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/gasFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_gasFragment_to_oilFragment"
-            app:destination="@id/oilFragment" />
+            app:destination="@id/oilFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/gasFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_gasFragment_to_tireFragment"
-            app:destination="@id/tireFragment" />
+            app:destination="@id/tireFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/gasFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_gasFragment_to_towingFragment"
-            app:destination="@id/towingFragment" />
+            app:destination="@id/towingFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/gasFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
+    //oil
     <fragment
         android:name="com.albassami.logistics.ui.fragment.OilFragment"
         android:id="@+id/oilFragment"
         android:label="OilFragment">
         <action
             android:id="@+id/action_oilFragment_to_doorLockFragment"
-            app:destination="@id/doorLockFragment" />
+            app:destination="@id/doorLockFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/oilFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_oilFragment_to_maintenanceFragment"
-            app:destination="@id/maintenanceFragment" />
+            app:destination="@id/maintenanceFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/oilFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_oilFragment_to_batteryFragment"
-            app:destination="@id/batteryFragment" />
+            app:destination="@id/batteryFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/oilFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_oilFragment_to_gasFragment"
-            app:destination="@id/gasFragment" />
+            app:destination="@id/gasFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/oilFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_oilFragment_to_tireFragment"
-            app:destination="@id/tireFragment" />
+            app:destination="@id/tireFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/oilFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_oilFragment_to_towingFragment"
-            app:destination="@id/towingFragment" />
+            app:destination="@id/towingFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/oilFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
+    //tire
     <fragment
         android:name="com.albassami.logistics.ui.fragment.TireFragment"
         android:id="@+id/tireFragment"
-        android:label="TireFragment"/>
+        android:label="TireFragment">
+        <action
+            android:id="@+id/action_tireFragment_to_doorLockFragment"
+            app:destination="@id/doorLockFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/tireFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tireFragment_to_maintenanceFragment"
+            app:destination="@id/maintenanceFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/tireFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tireFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/tireFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tireFragment_to_gasFragment"
+            app:destination="@id/gasFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/tireFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tireFragment_to_oilFragment"
+            app:destination="@id/oilFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/tireFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tireFragment_to_towingFragment"
+            app:destination="@id/towingFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/tireFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 
+    //towing
     <fragment
         android:name="com.albassami.logistics.ui.fragment.TowingFragment"
         android:id="@+id/towingFragment"
         android:label="TowingFragment">
         <action
             android:id="@+id/action_towingFragment_to_doorLockFragment"
-            app:destination="@id/doorLockFragment" />
+            app:destination="@id/doorLockFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/towingFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_towingFragment_to_maintenanceFragment"
-            app:destination="@id/maintenanceFragment" />
+            app:destination="@id/maintenanceFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/towingFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_towingFragment_to_batteryFragment"
-            app:destination="@id/batteryFragment" />
+            app:destination="@id/batteryFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/towingFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_towingFragment_to_tireFragment"
-            app:destination="@id/tireFragment" />
+            app:destination="@id/tireFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/towingFragment"
+            app:popUpToInclusive="true"  />
         <action
             android:id="@+id/action_towingFragment_to_oilFragment"
-            app:destination="@id/oilFragment" />
+            app:destination="@id/oilFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/towingFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_towingFragment_to_gasFragment"
-            app:destination="@id/gasFragment" />
+            app:destination="@id/gasFragment"
+            app:enterAnim="@anim/sliding_in_left"
+            app:exitAnim="@anim/sliding_out_right"
+            app:popEnterAnim="@anim/sliding_in_left"
+            app:popExitAnim="@anim/sliding_out_right"
+            app:popUpTo="@id/towingFragment"
+            app:popUpToInclusive="true"  />
     </fragment>
 
 </navigation>
